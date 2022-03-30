@@ -1,7 +1,7 @@
-# Your_Own_Library_Name
+# cgil-ol-map-mn95
 
 
-Your_Own_Library_Name is a library to help you with...
+cgil-ol-map-mn95 is a library to help you easily create OpenLayers maps using Lausanne and SwissTopo WMTS Tiles in Switzerland area
 
 this project uses 😀:
 * [RollupJs](https://rollupjs.org/) for bundling the code as CommonJS, UMD (Browser compatible) and Es2015 Modules.
@@ -17,43 +17,33 @@ just use the template, clone the repo and install dev dependencies with :
 npm install
 ```
 
-### How to build Your_Own_Library_Name in dist directory : 
+### How to build cgil-ol-map-mn95 in dist directory : 
 ```bash
 npm run build
 ```
 
-
-### Initial template configuration steps :
-This is a template to help you bundle your TypeScript **Your_Own_Library_Name** Library with Rollup.Js in ES, CommonJS and UMD format.
-
-*You better delete this section of the readme once you are ready to go*.
-
-1. Edit file *package.json* and replace **Your_Own_Library_Name** with your real project name.(do the same for **Your_Own_Git_Account_Name**)
-2. Put your own TypeScript files in the *src* directory 
-3. Adapt all files to your need...
-
 ### Documentation
 
-The [Documentation of Your_Own_Library_Name](https://lao-tseu-is-alive.github.io/cgil-typescript-lib-template/docs/) 
+The [Documentation of cgil-ol-map-mn95](https://lao-tseu-is-alive.github.io/cgil-typescript-lib-template/docs/) 
 is available under the docs directory and can be 
 generated from  the jsdoc comments in the source code with **npm run docs**.  
 
 
 
-### How to use Your_Own_Library_Name in the browser:
+### How to use cgil-ol-map-mn95 in the browser:
 Inside the browser you need to include the minified umd version.
-The library is exposed via the **Your_Own_Library_Name** 'namespace'.
+The library is exposed via the **cgil-ol-map-mn95** 'namespace'.
 
 You can have a look in the examples directory.
 
 Basically it's just a classical script :
 ```html
-<script src="../dist/Your_Own_Library_Name.umd.js"></script>
+<script src="../dist/cgil-ol-map-mn95.umd.js"></script>
 ```
 
 Then in your javascript code :
 
 ```javascript
-const myClass = new Your_Own_Library_Name.YourClass('param1', 45 ,'another parameter to your constructor')
+const myClass = new cgil-ol-map-mn95.YourClass('param1', 45 ,'another parameter to your constructor')
 
 ```

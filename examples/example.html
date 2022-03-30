@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Testing cgil-geom2d with UMD library</title>
-   <script src="../dist/Your_Own_Library_Name.umd.js"></script>
+  <title>Testing cgil-ol-map-mn95 with UMD library</title>
+   <script src="../dist/cgil-ol-map-mn95.umd.js"></script>
   <style>
     html{
       font-family: Arial, Helvetica, SansSerif;
@@ -47,8 +47,8 @@
 <script type="application/javascript">
 
   const log = (msg) => { console.log(`%c ${msg}`, 'background: #b3e5fc; color: #000')}
-
-  let P0 = new Your_Own_Library_Name.Point();
+  log(`starting execution with cgilOlMapMn95 version : ${cgilOlMapMn95.version}`)
+  let P0 = new cgilOlMapMn95.Point();
   log('P0 = new Point() will give P0 : ' + P0.dump());
   P0.name = 'P0';
   log('P0.name = \'P0\'; will give P0 : ' + P0.dump());
@@ -56,7 +56,7 @@
   P0.y = 5;
   log('P0.x = P0.y = 5; will give P0  : ' + P0.dump());
   log('P0.getAngleDeg() : ' + P0.getAngleDeg())
-  let P1 = new Your_Own_Library_Name.Point(1,2,'P1');
+  let P1 = new cgilOlMapMn95.Point(1,2,'P1');
   log('P1 = new Point(1,2)  ==> P1 : ' + P1.dump());
   P1.move(11,15);
   log('After P1.move(11,15);  ==> P1 : ' + P1.dump());

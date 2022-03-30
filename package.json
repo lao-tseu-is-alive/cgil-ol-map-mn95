@@ -1,11 +1,11 @@
 {
-  "name": "Your_Own_Library_Name",
-  "version": "1.0.0",
-  "description": "Your_Own_Library_Name is a library to help you with...",
-  "main": "dist/Your_Own_Library_Name.cjs.js",
-  "module": "dist/Your_Own_Library_Name.esm.js",
-  "browser": "dist/Your_Own_Library_Name.umd.js",
-  "types": "dist/Your_Own_Library_Name.d.ts",
+  "name": "cgil-ol-map-mn95",
+  "version": "0.1.0",
+  "description": "cgil-ol-map-mn95 cgil-ol-map-mn95 is a library to help you easily create OpenLayers maps using Lausanne and SwissTopo WMTS Tiles in Switzerland area",
+  "main": "dist/cgil-ol-map-mn95.cjs.js",
+  "module": "dist/cgil-ol-map-mn95.esm.js",
+  "browser": "dist/cgil-ol-map-mn95.umd.js",
+  "types": "dist/cgil-ol-map-mn95.d.ts",
   "files": [
     "/dist",
     "/examples",
@@ -16,38 +16,44 @@
     "clean": "rm -rf dist/*",
     "dev": "rollup -c -w",
     "docs": "typedoc --tsconfig ./tsconfig.json --out docs src",
-    "prebuild": "npm run clean",
+    "genver": "node -p \"'export const LIB_VERSION = ' + JSON.stringify(require('./package.json').version) + ';'\" > src/version.ts",
+    "prebuild": "npm run clean && npm run genver",
     "build": "rollup -c",
     "examples": "python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name.git"
+    "url": "git+https://github.com/lao-tseu-is-alive/cgil-ol-map-mn95.git"
   },
   "keywords": [
-    "Your_Own_Library_Name",
+    "cgil-ol-map-mn95",
+    "wmts",
+    "openlayers",
+    "lausanne",
+    "map",
+    "switzerland",
     "javascript",
     "rollup",
     "typescript"
   ],
-  "author": "Your_Own_Git_Account_Name",
+  "author": "lao-tseu-is-alive",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name/issues"
+    "url": "https://github.com/lao-tseu-is-alive/cgil-ol-map-mn95/issues"
   },
-  "homepage": "https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name#readme",
+  "homepage": "https://github.com/lao-tseu-is-alive/cgil-ol-map-mn95",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.5.0",
+    "eslint": "^8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "rollup": "^2.61.1",
-    "rollup-plugin-dts": "^4.0.1",
+    "eslint-plugin-import": "^2.25.4",
+    "rollup": "^2.70.1",
+    "rollup-plugin-dts": "^4.2.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript": "^1.0.1",
     "tslib": "^2.3.1",
-    "typedoc": "^0.22.10",
-    "typescript": "^4.5.4"
+    "typedoc": "^0.22.13",
+    "typescript": "^4.6.3"
   }
 }

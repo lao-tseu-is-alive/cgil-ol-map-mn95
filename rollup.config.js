@@ -25,7 +25,7 @@ export default [
   {
     input: 'src/index.ts',
     output: {
-      name: 'Your_Own_Library_Name',
+      name: 'cgilOlMapMn95',
       file: pkg.browser,
       format: 'umd',
       sourcemap: false,

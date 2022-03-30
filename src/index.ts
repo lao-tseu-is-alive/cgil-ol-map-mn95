@@ -1,1 +1,1 @@
-export { Point } from './Point';
+export { Point, version } from './Point';
