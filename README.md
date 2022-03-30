@@ -24,7 +24,7 @@ npm run build
 
 ### Documentation
 
-The [Documentation of cgil-ol-map-mn95](https://lao-tseu-is-alive.github.io/cgil-typescript-lib-template/docs/) 
+The [Documentation of cgil-ol-map-mn95](https://lao-tseu-is-alive.github.io/cgil-ol-map-mn95/docs/) 
 is available under the docs directory and can be 
 generated from  the jsdoc comments in the source code with **npm run docs**.  
 
