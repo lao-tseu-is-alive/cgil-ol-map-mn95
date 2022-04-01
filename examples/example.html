@@ -48,22 +48,7 @@
 
   const log = (msg) => { console.log(`%c ${msg}`, 'background: #b3e5fc; color: #000')}
   log(`starting execution with cgilOlMapMn95 version : ${cgilOlMapMn95.version}`)
-  let P0 = new cgilOlMapMn95.Point();
-  log('P0 = new Point() will give P0 : ' + P0.dump());
-  P0.name = 'P0';
-  log('P0.name = \'P0\'; will give P0 : ' + P0.dump());
-  P0.x = 5;
-  P0.y = 5;
-  log('P0.x = P0.y = 5; will give P0  : ' + P0.dump());
-  log('P0.getAngleDeg() : ' + P0.getAngleDeg())
-  let P1 = new cgilOlMapMn95.Point(1,2,'P1');
-  log('P1 = new Point(1,2)  ==> P1 : ' + P1.dump());
-  P1.move(11,15);
-  log('After P1.move(11,15);  ==> P1 : ' + P1.dump());
-  P1.moveRelative(-7,-12);
-  log('After P1.moveRelative(-7,-12);  ==> P1 : ' + P1.dump());
-  log('P1.getAngleDeg() : ' + P1.getAngleDeg())
-  log('P1.getDistanceFromOrigin() : ' + P1.getDistanceFromOrigin())
+
 
 
 </script>

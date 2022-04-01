@@ -28,7 +28,10 @@ export default [
       name: 'cgilOlMapMn95',
       file: pkg.browser,
       format: 'umd',
-      sourcemap: false,
+      sourcemap: true,
+      globals: {
+        'cgil-Log': 'Log',
+      },
     },
     plugins: [
       // resolve(),   // so Rollup can find  an external packages like `ol`

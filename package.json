@@ -1,6 +1,6 @@
 {
   "name": "cgil-ol-map-mn95",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "cgil-ol-map-mn95 cgil-ol-map-mn95 is a library to help you easily create OpenLayers maps using Lausanne and SwissTopo WMTS Tiles in Switzerland area",
   "main": "dist/cgil-ol-map-mn95.cjs.js",
   "module": "dist/cgil-ol-map-mn95.esm.js",
@@ -16,7 +16,7 @@
     "clean": "rm -rf dist/*",
     "dev": "rollup -c -w",
     "docs": "typedoc --tsconfig ./tsconfig.json --out docs src",
-    "genver": "node -p \"'export const LIB_VERSION = ' + JSON.stringify(require('./package.json').version) + ';'\" > src/version.ts",
+    "genver": "node scripts/genver.js > src/config.ts",
     "prebuild": "npm run clean && npm run genver",
     "build": "rollup -c",
     "examples": "python -m SimpleHTTPServer"
@@ -43,6 +43,7 @@
   },
   "homepage": "https://github.com/lao-tseu-is-alive/cgil-ol-map-mn95",
   "devDependencies": {
+    "@types/proj4": "^2.5.2",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.7.0",
     "eslint": "^8.12.0",
@@ -55,5 +56,11 @@
     "tslib": "^2.3.1",
     "typedoc": "^0.22.13",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "cgil-log": "^3.0.1",
+    "ol": "^6.14.1",
+    "ol-layerswitcher": "^3.8.3",
+    "proj4": "^2.8.0"
   }
 }
